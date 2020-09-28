@@ -1,0 +1,4 @@
+add_executable(ContinentalFuzzyConsole src/main.cpp)
+target_compile_features(ContinentalFuzzyConsole PRIVATE cxx_auto_type)
+
+target_link_libraries(ContinentalFuzzyConsole ContinentalFuzzy::ContinentalFuzzy)
