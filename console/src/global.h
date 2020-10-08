@@ -3,15 +3,13 @@
   @author Stefan Frings
 */
 
-#ifndef GLOBAL_H
-#define GLOBAL_H
+#ifndef STEFANFRINGS_GLOBAL_H
+#define STEFANFRINGS_GLOBAL_H
 
 #include <templateengine/templatecache.h>
 #include <httpserver/httpsessionstore.h>
 #include <httpserver/staticfilecontroller.h>
 #include <logging/filelogger.h>
-
-using namespace stefanfrings;
 
 /**
   Global objects that are shared by multiple source files
@@ -19,15 +17,15 @@ using namespace stefanfrings;
 */
 
 /** Cache for template files */
-extern TemplateCache* templateCache;
+extern stefanfrings::TemplateCache* templateCache;
 
 /** Storage for session cookies */
-extern  HttpSessionStore* sessionStore;
+extern stefanfrings::HttpSessionStore* sessionStore;
 
 /** Controller for static files */
-extern  StaticFileController* staticFileController;
+extern stefanfrings::StaticFileController* staticFileController;
 
 /** Redirects log messages to a file */
-extern  FileLogger* logger;
+extern stefanfrings::FileLogger* logger;
 
-#endif // GLOBAL_H
+#endif // STEFANFRINGS_GLOBAL_H

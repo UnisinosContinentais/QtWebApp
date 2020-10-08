@@ -42,8 +42,8 @@
   @author Tolltech
 */
 
-#ifndef QTSERVICE_H
-#define QTSERVICE_H
+#ifndef STEFANFRINGS_QTSERVICE_H
+#define STEFANFRINGS_QTSERVICE_H
 
 #include <QtGlobal>
 #include <QCoreApplication>
@@ -190,4 +190,4 @@ private:
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(QtServiceBase::ServiceFlags)
 
-#endif // QTSERVICE_H
+#endif // STEFANFRINGS_QTSERVICE_H

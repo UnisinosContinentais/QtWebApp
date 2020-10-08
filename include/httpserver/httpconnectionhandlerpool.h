@@ -1,5 +1,5 @@
-#ifndef HTTPCONNECTIONHANDLERPOOL_H
-#define HTTPCONNECTIONHANDLERPOOL_H
+#ifndef STEFANFRINGS_HTTPCONNECTIONHANDLERPOOL_H
+#define STEFANFRINGS_HTTPCONNECTIONHANDLERPOOL_H
 
 #include <QList>
 #include <QTimer>
@@ -87,7 +87,7 @@ private:
     /** Load SSL configuration */
     void loadSslConfig();
 
-private slots:
+private Q_SLOTS:
 
     /** Received from the clean-up timer.  */
     void cleanup();
@@ -96,4 +96,4 @@ private slots:
 
 } // end of namespace
 
-#endif // HTTPCONNECTIONHANDLERPOOL_H
+#endif // STEFANFRINGS_HTTPCONNECTIONHANDLERPOOL_H

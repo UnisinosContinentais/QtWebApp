@@ -38,8 +38,8 @@
 **
 ****************************************************************************/
 
-#ifndef QTUNIXSERVERSOCKET_H
-#define QTUNIXSERVERSOCKET_H
+#ifndef STEFANFRINGS_QTUNIXSERVERSOCKET_H
+#define STEFANFRINGS_QTUNIXSERVERSOCKET_H
 
 #include <QTcpServer>
 
@@ -58,4 +58,4 @@ private:
 };
 
 
-#endif
+#endif // STEFANFRINGS_QTUNIXSERVERSOCKET_H

@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPREQUESTHANDLER_H
-#define HTTPREQUESTHANDLER_H
+#ifndef STEFANFRINGS_HTTPREQUESTHANDLER_H
+#define STEFANFRINGS_HTTPREQUESTHANDLER_H
 
 #include "httpglobal.h"
 #include "httprequest.h"
@@ -51,4 +51,4 @@ public:
 
 } // end of namespace
 
-#endif // HTTPREQUESTHANDLER_H
+#endif // STEFANFRINGS_HTTPREQUESTHANDLER_H

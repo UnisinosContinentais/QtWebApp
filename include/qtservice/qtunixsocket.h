@@ -38,8 +38,8 @@
 **
 ****************************************************************************/
 
-#ifndef QTUNIXSOCKET_H
-#define QTUNIXSOCKET_H
+#ifndef STEFANFRINGS_QTUNIXSOCKET_H
+#define STEFANFRINGS_QTUNIXSOCKET_H
 
 #include <QTcpSocket>
 
@@ -52,4 +52,4 @@ public:
     bool connectTo(const QString &path);
 };
 
-#endif
+#endif // STEFANFRINGS_QTUNIXSOCKET_H

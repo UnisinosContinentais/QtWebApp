@@ -8,6 +8,8 @@
 #include <templateengine/templatecache.h>
 #include <templateengine/template.h>
 
+using namespace stefanfrings;
+
 TemplateController::TemplateController()
 {}
 

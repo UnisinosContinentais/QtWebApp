@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef LOGGLOBAL_H
-#define LOGGLOBAL_H
+#ifndef STEFANFRINGS_LOGGLOBAL_H
+#define STEFANFRINGS_LOGGLOBAL_H
 
 #include <QtGlobal>
 
@@ -20,5 +20,5 @@
     #define DECLSPEC
 #endif
 
-#endif // LOGGLOBAL_H
+#endif // STEFANFRINGS_LOGGLOBAL_H
 

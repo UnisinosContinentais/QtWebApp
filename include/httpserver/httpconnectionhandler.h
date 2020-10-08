@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPCONNECTIONHANDLER_H
-#define HTTPCONNECTIONHANDLER_H
+#ifndef STEFANFRINGS_HTTPCONNECTIONHANDLER_H
+#define STEFANFRINGS_HTTPCONNECTIONHANDLER_H
 
 #ifndef QT_NO_SSL
    #include <QSslConfiguration>
@@ -99,7 +99,7 @@ private:
     /**  Create SSL or TCP socket */
     void createSocket();
 
-public slots:
+public Q_SLOTS:
 
     /**
       Received from from the listener, when the handler shall start processing a new connection.
@@ -107,7 +107,7 @@ public slots:
     */
     void handleConnection(const tSocketDescriptor socketDescriptor);
 
-private slots:
+private Q_SLOTS:
 
     /** Received from the socket when a read-timeout occured */
     void readTimeout();
@@ -124,4 +124,4 @@ private slots:
 
 } // end of namespace
 
-#endif // HTTPCONNECTIONHANDLER_H
+#endif // STEFANFRINGS_HTTPCONNECTIONHANDLER_H

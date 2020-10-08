@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPLISTENER_H
-#define HTTPLISTENER_H
+#ifndef STEFANFRINGS_HTTPLISTENER_H
+#define STEFANFRINGS_HTTPLISTENER_H
 
 #include <QTcpServer>
 #include <QSettings>
@@ -91,7 +91,7 @@ private:
     /** Pool of connection handlers */
     HttpConnectionHandlerPool* pool;
 
-signals:
+Q_SIGNALS:
 
     /**
       Sent to the connection handler to process a new incoming connection.
@@ -104,4 +104,4 @@ signals:
 
 } // end of namespace
 
-#endif // HTTPLISTENER_H
+#endif // STEFANFRINGS_HTTPLISTENER_H

@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPREQUEST_H
-#define HTTPREQUEST_H
+#ifndef STEFANFRINGS_HTTPREQUEST_H
+#define STEFANFRINGS_HTTPREQUEST_H
 
 #include <QByteArray>
 #include <QHostAddress>
@@ -236,4 +236,4 @@ private:
 
 } // end of namespace
 
-#endif // HTTPREQUEST_H
+#endif // STEFANFRINGS_HTTPREQUEST_H

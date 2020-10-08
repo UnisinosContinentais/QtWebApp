@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef DUALFILELOGGER_H
-#define DUALFILELOGGER_H
+#ifndef STEFANFRINGS_DUALFILELOGGER_H
+#define STEFANFRINGS_DUALFILELOGGER_H
 
 #include <QString>
 #include <QSettings>
@@ -79,4 +79,4 @@ private:
 
 } // end of namespace
 
-#endif // DUALFILELOGGER_H
+#endif // STEFANFRINGS_DUALFILELOGGER_H

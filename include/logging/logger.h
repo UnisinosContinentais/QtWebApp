@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef LOGGER_H
-#define LOGGER_H
+#ifndef STEFANFRINGS_LOGGER_H
+#define STEFANFRINGS_LOGGER_H
 
 #include <QtGlobal>
 #include <QThreadStorage>
@@ -195,4 +195,4 @@ private:
 
 } // end of namespace
 
-#endif // LOGGER_H
+#endif // STEFANFRINGS_LOGGER_H

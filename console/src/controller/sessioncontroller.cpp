@@ -8,6 +8,8 @@
 #include "sessioncontroller.h"
 #include <httpserver/httpsessionstore.h>
 
+using namespace stefanfrings;
+
 SessionController::SessionController()
 {}
 

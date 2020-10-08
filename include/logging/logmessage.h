@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef LOGMESSAGE_H
-#define LOGMESSAGE_H
+#ifndef STEFANFRINGS_LOGMESSAGE_H
+#define STEFANFRINGS_LOGMESSAGE_H
 
 #include <QtGlobal>
 #include <QDateTime>
@@ -95,4 +95,4 @@ private:
 
 } // end of namespace
 
-#endif // LOGMESSAGE_H
+#endif // STEFANFRINGS_LOGMESSAGE_H

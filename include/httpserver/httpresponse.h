@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPRESPONSE_H
-#define HTTPRESPONSE_H
+#ifndef STEFANFRINGS_HTTPRESPONSE_H
+#define STEFANFRINGS_HTTPRESPONSE_H
 
 #include <QMap>
 #include <QString>
@@ -160,4 +160,4 @@ private:
 
 } // end of namespace
 
-#endif // HTTPRESPONSE_H
+#endif // STEFANFRINGS_HTTPRESPONSE_H

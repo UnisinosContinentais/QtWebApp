@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPCOOKIE_H
-#define HTTPCOOKIE_H
+#ifndef STEFANFRINGS_HTTPCOOKIE_H
+#define STEFANFRINGS_HTTPCOOKIE_H
 
 #include <QList>
 #include <QByteArray>
@@ -123,4 +123,4 @@ private:
 
 } // end of namespace
 
-#endif // HTTPCOOKIE_H
+#endif // STEFANFRINGS_HTTPCOOKIE_H

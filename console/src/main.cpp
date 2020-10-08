@@ -62,30 +62,30 @@ int main(int argc, char *argv[])
     QString configFileName=searchConfigFile();
 
     // Configure logging into a file
-    QSettings* logSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    QSettings* logSettings=new QSettings(configFileName,QSettings::IniFormat);
     logSettings->beginGroup("logging");
-    FileLogger* logger=new FileLogger(logSettings,10000,&app);
+    FileLogger* logger=new FileLogger(logSettings,10000);
     logger->installMsgHandler();
 
     // Configure template loader and cache
-    QSettings* templateSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    QSettings* templateSettings=new QSettings(configFileName,QSettings::IniFormat);
     templateSettings->beginGroup("templates");
-    templateCache=new TemplateCache(templateSettings,&app);
+    templateCache=new TemplateCache(templateSettings);
 
     // Configure session store
-    QSettings* sessionSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    QSettings* sessionSettings=new QSettings(configFileName,QSettings::IniFormat);
     sessionSettings->beginGroup("sessions");
-    sessionStore=new HttpSessionStore(sessionSettings,&app);
+    sessionStore=new HttpSessionStore(sessionSettings);
 
     // Configure static file controller
-    QSettings* fileSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    QSettings* fileSettings=new QSettings(configFileName,QSettings::IniFormat);
     fileSettings->beginGroup("docroot");
-    staticFileController=new StaticFileController(fileSettings,&app);
+    staticFileController=new StaticFileController(fileSettings);
 
     // Configure and start the TCP listener
-    QSettings* listenerSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    QSettings* listenerSettings=new QSettings(configFileName,QSettings::IniFormat);
     listenerSettings->beginGroup("listener");
-    new HttpListener(listenerSettings,new RequestMapper(&app),&app);
+    new HttpListener(listenerSettings,new RequestMapper());
 
     qInfo("Application has started");
     app.exec();

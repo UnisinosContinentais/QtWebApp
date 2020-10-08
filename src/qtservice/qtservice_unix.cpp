@@ -291,7 +291,7 @@ public:
 protected:
     void incomingConnection(tSocketDescriptor socketDescriptor) Q_DECL_OVERRIDE;
 
-private slots:
+private Q_SLOTS:
     void slotReady();
     void slotClosed();
 

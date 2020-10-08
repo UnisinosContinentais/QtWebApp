@@ -3,20 +3,18 @@
   @author Stefan Frings
 */
 
-#ifndef DUMPCONTROLLER_H
-#define DUMPCONTROLLER_H
+#ifndef STEFANFRINGS_DUMPCONTROLLER_H
+#define STEFANFRINGS_DUMPCONTROLLER_H
 
 #include <httpserver/httprequest.h>
 #include <httpserver/httpresponse.h>
 #include <httpserver/httprequesthandler.h>
 
-using namespace stefanfrings;
-
 /**
   This controller dumps the received HTTP request in the response.
 */
 
-class DumpController : public HttpRequestHandler {
+class DumpController : public stefanfrings::HttpRequestHandler {
     Q_OBJECT
     Q_DISABLE_COPY(DumpController)
 public:
@@ -25,7 +23,7 @@ public:
     DumpController();
 
     /** Generates the response */
-    void service(HttpRequest& request, HttpResponse& response);
+    void service(stefanfrings::HttpRequest& request, stefanfrings::HttpResponse& response);
 };
 
-#endif // DUMPCONTROLLER_H
+#endif // STEFANFRINGS_DUMPCONTROLLER_H

@@ -38,8 +38,8 @@
 **
 ****************************************************************************/
 
-#ifndef QTSERVICE_P_H
-#define QTSERVICE_P_H
+#ifndef STEFANFRINGS_QTSERVICE_P_H
+#define STEFANFRINGS_QTSERVICE_P_H
 
 #include <QStringList>
 #include "qtservice.h"
@@ -84,4 +84,4 @@ public:
     class QtServiceSysPrivate *sysd;
 };
 
-#endif
+#endif // STEFANFRINGS_QTSERVICE_P_H

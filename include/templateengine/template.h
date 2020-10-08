@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef TEMPLATE_H
-#define TEMPLATE_H
+#ifndef STEFANFRINGS_HTEMPLATE_H
+#define STEFANFRINGS_HTEMPLATE_H
 
 #include <QString>
 #include <QRegExp>
@@ -169,4 +169,4 @@ private:
 
 } // end of namespace
 
-#endif // TEMPLATE_H
+#endif // STEFANFRINGS_TEMPLATE_H

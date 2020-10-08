@@ -3,21 +3,19 @@
   @author Stefan Frings
 */
 
-#ifndef FILEUPLOADCONTROLLER_H
-#define FILEUPLOADCONTROLLER_H
+#ifndef STEFANFRINGS_FILEUPLOADCONTROLLER_H
+#define STEFANFRINGS_FILEUPLOADCONTROLLER_H
 
 #include <httpserver/httprequest.h>
 #include <httpserver/httpresponse.h>
 #include <httpserver/httprequesthandler.h>
-
-using namespace stefanfrings;
 
 /**
   This controller displays a HTML form for file upload and recieved the file.
 */
 
 
-class FileUploadController : public HttpRequestHandler {
+class FileUploadController : public stefanfrings::HttpRequestHandler {
     Q_OBJECT
     Q_DISABLE_COPY(FileUploadController)
 public:
@@ -26,7 +24,7 @@ public:
     FileUploadController();
 
     /** Generates the response */
-    void service(HttpRequest& request, HttpResponse& response);
+    void service(stefanfrings::HttpRequest& request, stefanfrings::HttpResponse& response);
 };
 
-#endif // FILEUPLOADCONTROLLER_H
+#endif // STEFANFRINGS_FILEUPLOADCONTROLLER_H

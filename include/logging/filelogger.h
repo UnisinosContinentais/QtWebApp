@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef FILELOGGER_H
-#define FILELOGGER_H
+#ifndef STEFANFRINGS_FILELOGGER_H
+#define STEFANFRINGS_FILELOGGER_H
 
 #include <QtGlobal>
 #include <QSettings>
@@ -131,4 +131,4 @@ private:
 
 } // end of namespace
 
-#endif // FILELOGGER_H
+#endif // STEFANFRINGS_FILELOGGER_H

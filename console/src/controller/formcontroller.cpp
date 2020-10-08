@@ -5,6 +5,8 @@
 
 #include "formcontroller.h"
 
+using namespace stefanfrings;
+
 FormController::FormController()
 {}
 

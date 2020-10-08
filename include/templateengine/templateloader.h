@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef TEMPLATELOADER_H
-#define TEMPLATELOADER_H
+#ifndef STEFANFRINGS_TEMPLATELOADER_H
+#define STEFANFRINGS_TEMPLATELOADER_H
 
 #include <QString>
 #include <QSettings>
@@ -84,4 +84,4 @@ protected:
 
 } // end of namespace
 
-#endif // TEMPLATELOADER_H
+#endif // STEFANFRINGS_TEMPLATELOADER_H

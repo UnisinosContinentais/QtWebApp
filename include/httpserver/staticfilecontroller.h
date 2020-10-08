@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef STATICFILECONTROLLER_H
-#define STATICFILECONTROLLER_H
+#ifndef STEFANFRINGS_STATICFILECONTROLLER_H
+#define STEFANFRINGS_STATICFILECONTROLLER_H
 
 #include <QCache>
 #include <QMutex>
@@ -97,4 +97,4 @@ private:
 
 } // end of namespace
 
-#endif // STATICFILECONTROLLER_H
+#endif // STEFANFRINGS_STATICFILECONTROLLER_H

@@ -3,20 +3,18 @@
   @author Stefan Frings
 */
 
-#ifndef SESSIONCONTROLLER_H
-#define SESSIONCONTROLLER_H
+#ifndef STEFANFRINGS_SESSIONCONTROLLER_H
+#define STEFANFRINGS_SESSIONCONTROLLER_H
 
 #include <httpserver/httprequest.h>
 #include <httpserver/httpresponse.h>
 #include <httpserver/httprequesthandler.h>
 
-using namespace stefanfrings;
-
 /**
   This controller demonstrates how to use sessions.
 */
 
-class SessionController : public HttpRequestHandler {
+class SessionController : public stefanfrings::HttpRequestHandler {
     Q_OBJECT
     Q_DISABLE_COPY(SessionController)
 public:
@@ -25,7 +23,7 @@ public:
     SessionController();
 
     /** Generates the response */
-    void service(HttpRequest& request, HttpResponse& response);
+    void service(stefanfrings::HttpRequest& request, stefanfrings::HttpResponse& response);
 };
 
-#endif // SESSIONCONTROLLER_H
+#endif // STEFANFRINGS_SESSIONCONTROLLER_H

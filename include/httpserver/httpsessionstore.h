@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPSESSIONSTORE_H
-#define HTTPSESSIONSTORE_H
+#ifndef STEFANFRINGS_HTTPSESSIONSTORE_H
+#define STEFANFRINGS_HTTPSESSIONSTORE_H
 
 #include <QObject>
 #include <QMap>
@@ -108,7 +108,7 @@ private:
     /** Used to synchronize threads */
     QMutex mutex;
 
-private slots:
+private Q_SLOTS:
 
     /** Called every minute to cleanup expired sessions. */
     void sessionTimerEvent();
@@ -116,4 +116,4 @@ private slots:
 
 } // end of namespace
 
-#endif // HTTPSESSIONSTORE_H
+#endif // STEFANFRINGS_HTTPSESSIONSTORE_H

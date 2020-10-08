@@ -5,6 +5,8 @@
 
 #include "fileuploadcontroller.h"
 
+using namespace stefanfrings;
+
 FileUploadController::FileUploadController()
 {}
 

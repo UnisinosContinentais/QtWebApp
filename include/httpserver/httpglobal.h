@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPGLOBAL_H
-#define HTTPGLOBAL_H
+#ifndef STEFANFRINGS_HTTPGLOBAL_H
+#define STEFANFRINGS_HTTPGLOBAL_H
 
 #include <QtGlobal>
 
@@ -24,5 +24,5 @@
 DECLSPEC const char* getQtWebAppLibVersion();
 
 
-#endif // HTTPGLOBAL_H
+#endif // STEFANFRINGS_HTTPGLOBAL_H
 

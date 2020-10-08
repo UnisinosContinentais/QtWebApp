@@ -3,8 +3,8 @@
   @author Stefan Frings
 */
 
-#ifndef HTTPSESSION_H
-#define HTTPSESSION_H
+#ifndef STEFANFRINGS_HTTPSESSION_H
+#define STEFANFRINGS_HTTPSESSION_H
 
 #include <QByteArray>
 #include <QVariant>
@@ -119,4 +119,4 @@ private:
 
 } // end of namespace
 
-#endif // HTTPSESSION_H
+#endif // STEFANFRINGS_HTTPSESSION_H

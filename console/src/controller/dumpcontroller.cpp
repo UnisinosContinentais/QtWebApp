@@ -8,6 +8,8 @@
 #include <QDateTime>
 #include <QThread>
 
+using namespace stefanfrings;
+
 DumpController::DumpController()
 {}
 

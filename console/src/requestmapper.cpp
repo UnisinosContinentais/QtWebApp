@@ -14,6 +14,8 @@
 #include "controller/fileuploadcontroller.h"
 #include "controller/sessioncontroller.h"
 
+using namespace stefanfrings;
+
 RequestMapper::RequestMapper(QObject* parent)
     :HttpRequestHandler(parent)
 {

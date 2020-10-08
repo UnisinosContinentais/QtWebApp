@@ -1,5 +1,5 @@
-#ifndef TEMPLATECACHE_H
-#define TEMPLATECACHE_H
+#ifndef STEFANFRINGS_TEMPLATECACHE_H
+#define STEFANFRINGS_TEMPLATECACHE_H
 
 #include <QCache>
 #include "templateglobal.h"
@@ -86,4 +86,4 @@ private:
 
 } // end of namespace
 
-#endif // TEMPLATECACHE_H
+#endif // STEFANFRINGS_TEMPLATECACHE_H
