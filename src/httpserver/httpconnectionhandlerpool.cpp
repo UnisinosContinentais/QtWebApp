@@ -25,7 +25,7 @@ HttpConnectionHandlerPool::HttpConnectionHandlerPool(const QSettings *settings, 
 HttpConnectionHandlerPool::~HttpConnectionHandlerPool()
 {
     // delete all connection handlers and wait until their threads are closed
-    foreach(HttpConnectionHandler* handler, pool)
+    Q_FOREACH (HttpConnectionHandler* handler, pool)
     {
        delete handler;
     }
@@ -39,7 +39,7 @@ HttpConnectionHandler* HttpConnectionHandlerPool::getConnectionHandler()
     HttpConnectionHandler* freeHandler=0;
     mutex.lock();
     // find a free handler in pool
-    foreach(HttpConnectionHandler* handler, pool)
+    Q_FOREACH (HttpConnectionHandler* handler, pool)
     {
         if (!handler->isBusy())
         {
@@ -69,7 +69,7 @@ void HttpConnectionHandlerPool::cleanup()
     int maxIdleHandlers=settings->value("minThreads",1).toInt();
     int idleCounter=0;
     mutex.lock();
-    foreach(HttpConnectionHandler* handler, pool)
+    Q_FOREACH (HttpConnectionHandler* handler, pool)
     {
         if (!handler->isBusy())
         {

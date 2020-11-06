@@ -34,7 +34,6 @@ namespace stefanfrings {
 */
 
 class DECLSPEC HttpResponse {
-    Q_DISABLE_COPY(HttpResponse)
 public:
 
     /**

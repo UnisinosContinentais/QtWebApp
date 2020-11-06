@@ -39,7 +39,6 @@ namespace stefanfrings {
 
 class DECLSPEC TemplateLoader : public QObject {
     Q_OBJECT
-    Q_DISABLE_COPY(TemplateLoader)
 public:
 
     /**

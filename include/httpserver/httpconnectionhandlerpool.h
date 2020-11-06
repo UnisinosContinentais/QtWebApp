@@ -47,7 +47,6 @@ namespace stefanfrings {
 
 class DECLSPEC HttpConnectionHandlerPool : public QObject {
     Q_OBJECT
-    Q_DISABLE_COPY(HttpConnectionHandlerPool)
 public:
 
     /**

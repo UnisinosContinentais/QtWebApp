@@ -48,8 +48,6 @@ namespace stefanfrings {
 */
 class DECLSPEC HttpConnectionHandler : public QObject {
     Q_OBJECT
-    Q_DISABLE_COPY(HttpConnectionHandler)
-
 public:
 
     /**

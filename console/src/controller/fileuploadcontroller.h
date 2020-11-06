@@ -17,7 +17,6 @@
 
 class FileUploadController : public stefanfrings::HttpRequestHandler {
     Q_OBJECT
-    Q_DISABLE_COPY(FileUploadController)
 public:
 
     /** Constructor */

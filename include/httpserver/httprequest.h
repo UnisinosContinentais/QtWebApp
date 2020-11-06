@@ -36,9 +36,7 @@ namespace stefanfrings {
 */
 
 class DECLSPEC HttpRequest {
-    Q_DISABLE_COPY(HttpRequest)
     friend class HttpSessionStore;
-
 public:
 
     /** Values for getStatus() */

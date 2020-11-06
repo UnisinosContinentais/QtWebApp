@@ -27,7 +27,6 @@ namespace stefanfrings {
 
 class DECLSPEC DualFileLogger : public Logger {
     Q_OBJECT
-    Q_DISABLE_COPY(DualFileLogger)
 public:
 
     /**

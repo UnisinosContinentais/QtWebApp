@@ -17,7 +17,6 @@
 
 class FormController : public stefanfrings::HttpRequestHandler {
     Q_OBJECT
-    Q_DISABLE_COPY(FormController)
 public:
 
     /** Constructor */

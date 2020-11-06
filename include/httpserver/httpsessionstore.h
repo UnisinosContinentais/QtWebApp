@@ -34,7 +34,6 @@ namespace stefanfrings {
 
 class DECLSPEC HttpSessionStore : public QObject {
     Q_OBJECT
-    Q_DISABLE_COPY(HttpSessionStore)
 public:
 
     /**

@@ -52,7 +52,6 @@ namespace stefanfrings {
 
 class DECLSPEC Logger : public QObject {
     Q_OBJECT
-    Q_DISABLE_COPY(Logger)
 public:
 
     /**

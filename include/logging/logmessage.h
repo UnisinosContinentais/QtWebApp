@@ -35,7 +35,6 @@ namespace stefanfrings {
 
 class DECLSPEC LogMessage
 {
-    Q_DISABLE_COPY(LogMessage)
 public:
 
     /**
