@@ -76,7 +76,7 @@ public:
 protected:
 
     /** Serves new incoming connection requests */
-    void incomingConnection(tSocketDescriptor socketDescriptor);
+    void incomingConnection(qintptr socketDescriptor);
 
 private:
 
@@ -96,7 +96,7 @@ Q_SIGNALS:
       @param socketDescriptor references the accepted connection.
     */
 
-    void handleConnection(tSocketDescriptor socketDescriptor);
+    void handleConnection(qintptr socketDescriptor);
 
 };
 
