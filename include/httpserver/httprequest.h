@@ -14,7 +14,7 @@
 #include <QSettings>
 #include <QTemporaryFile>
 #include <QUuid>
-#include "httpglobal.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -35,7 +35,7 @@ namespace stefanfrings {
   The body is always a little larger than the file itself.
 */
 
-class DECLSPEC HttpRequest {
+class QTWEBAPP_EXPORT_DECL HttpRequest {
     friend class HttpSessionStore;
 public:
 

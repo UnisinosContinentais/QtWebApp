@@ -47,23 +47,12 @@
 
 #include <QtGlobal>
 #include <QCoreApplication>
-
-// This is specific to Windows dll's
-#if defined(Q_OS_WIN)
-    #if defined(QTWEBAPPLIB_EXPORT)
-        #define DECLSPEC Q_DECL_EXPORT
-    #elif defined(QTWEBAPPLIB_IMPORT)
-        #define DECLSPEC Q_DECL_IMPORT
-    #endif
-#endif
-#if !defined(DECLSPEC)
-    #define DECLSPEC
-#endif
+#include "export.h"
 
 class QStringList;
 class QtServiceControllerPrivate;
 
-class DECLSPEC QtServiceController
+class QTWEBAPP_EXPORT_DECL QtServiceController
 {
     Q_DECLARE_PRIVATE(QtServiceController)
 public:
@@ -100,7 +89,7 @@ private:
 
 class QtServiceBasePrivate;
 
-class DECLSPEC QtServiceBase
+class QTWEBAPP_EXPORT_DECL QtServiceBase
 {
     Q_DECLARE_PRIVATE(QtServiceBase)
 public:

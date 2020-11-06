@@ -6,7 +6,6 @@
 #ifndef STEFANFRINGS_HTTPREQUESTHANDLER_H
 #define STEFANFRINGS_HTTPREQUESTHANDLER_H
 
-#include "httpglobal.h"
 #include "httprequest.h"
 #include "httpresponse.h"
 #include "../export.h"
@@ -25,7 +24,7 @@ namespace stefanfrings {
    @see StaticFileController which delivers static local files.
 */
 
-class DECLSPEC HttpRequestHandler : public QObject {
+class QTWEBAPP_EXPORT_DECL HttpRequestHandler : public QObject {
     Q_OBJECT
 public:
 

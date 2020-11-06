@@ -9,7 +9,7 @@
 #include <QByteArray>
 #include <QVariant>
 #include <QReadWriteLock>
-#include "httpglobal.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -20,7 +20,7 @@ namespace stefanfrings {
   @see HttpSessionStore should be used to create and get instances of this class.
 */
 
-class DECLSPEC HttpSession {
+class QTWEBAPP_EXPORT_DECL HttpSession {
 
 public:
 

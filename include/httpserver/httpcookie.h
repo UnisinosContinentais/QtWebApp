@@ -8,7 +8,7 @@
 
 #include <QList>
 #include <QByteArray>
-#include "httpglobal.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -18,7 +18,7 @@ namespace stefanfrings {
   2109.
 */
 
-class DECLSPEC HttpCookie
+class QTWEBAPP_EXPORT_DECL HttpCookie
 {
 public:
 

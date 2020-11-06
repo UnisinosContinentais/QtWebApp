@@ -5,8 +5,8 @@
 #include <QTimer>
 #include <QObject>
 #include <QMutex>
-#include "httpglobal.h"
 #include "httpconnectionhandler.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -45,7 +45,7 @@ namespace stefanfrings {
   @see HttpRequest for description of config settings maxRequestSize and maxMultiPartSize
 */
 
-class DECLSPEC HttpConnectionHandlerPool : public QObject {
+class QTWEBAPP_EXPORT_DECL HttpConnectionHandlerPool : public QObject {
     Q_OBJECT
 public:
 

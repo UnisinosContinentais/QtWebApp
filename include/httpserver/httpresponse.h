@@ -9,8 +9,8 @@
 #include <QMap>
 #include <QString>
 #include <QTcpSocket>
-#include "httpglobal.h"
 #include "httpcookie.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -33,7 +33,7 @@ namespace stefanfrings {
   before calling write(). Web Browsers use that information to display a progress bar.
 */
 
-class DECLSPEC HttpResponse {
+class QTWEBAPP_EXPORT_DECL HttpResponse {
 public:
 
     /**

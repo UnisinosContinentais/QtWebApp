@@ -44,7 +44,6 @@ add_library(QtWebApp
     src/httpserver/httpconnectionhandler.cpp
     src/httpserver/httpconnectionhandlerpool.cpp
     src/httpserver/httpcookie.cpp
-    src/httpserver/httpglobal.cpp
     src/httpserver/httplistener.cpp
     src/httpserver/httprequest.cpp
     src/httpserver/httprequesthandler.cpp

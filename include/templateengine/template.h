@@ -12,7 +12,7 @@
 #include <QTextCodec>
 #include <QFile>
 #include <QString>
-#include "templateglobal.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -89,7 +89,7 @@ namespace stefanfrings {
  @see TemplateCache
 */
 
-class DECLSPEC Template : public QString {
+class QTWEBAPP_EXPORT_DECL Template : public QString {
 public:
 
     /**

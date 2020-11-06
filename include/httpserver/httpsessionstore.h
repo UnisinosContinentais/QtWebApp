@@ -10,10 +10,10 @@
 #include <QMap>
 #include <QTimer>
 #include <QMutex>
-#include "httpglobal.h"
 #include "httpsession.h"
 #include "httpresponse.h"
 #include "httprequest.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -32,7 +32,7 @@ namespace stefanfrings {
   </pre></code>
 */
 
-class DECLSPEC HttpSessionStore : public QObject {
+class QTWEBAPP_EXPORT_DECL HttpSessionStore : public QObject {
     Q_OBJECT
 public:
 

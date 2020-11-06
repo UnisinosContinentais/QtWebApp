@@ -10,8 +10,8 @@
 #include <QSettings>
 #include <QTextCodec>
 #include <QMutex>
-#include "templateglobal.h"
 #include "template.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -37,7 +37,7 @@ namespace stefanfrings {
   @see TemplateCache
 */
 
-class DECLSPEC TemplateLoader : public QObject {
+class QTWEBAPP_EXPORT_DECL TemplateLoader : public QObject {
     Q_OBJECT
 public:
 

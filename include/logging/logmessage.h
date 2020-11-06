@@ -9,7 +9,7 @@
 #include <QtGlobal>
 #include <QDateTime>
 #include <QHash>
-#include "logglobal.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -33,7 +33,7 @@ namespace stefanfrings {
   - {line}      Line number where the message was generated
 */
 
-class DECLSPEC LogMessage
+class QTWEBAPP_EXPORT_DECL LogMessage
 {
 public:
 

@@ -9,10 +9,10 @@
 #include <QTcpServer>
 #include <QSettings>
 #include <QBasicTimer>
-#include "httpglobal.h"
 #include "httpconnectionhandler.h"
 #include "httpconnectionhandlerpool.h"
 #include "httprequesthandler.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -41,7 +41,7 @@ namespace stefanfrings {
   @see HttpRequest for description of config settings maxRequestSize and maxMultiPartSize
 */
 
-class DECLSPEC HttpListener : public QTcpServer {
+class QTWEBAPP_EXPORT_DECL HttpListener : public QTcpServer {
     Q_OBJECT
 public:
     /**

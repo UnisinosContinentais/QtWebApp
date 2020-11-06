@@ -9,9 +9,9 @@
 #include <QString>
 #include <QSettings>
 #include <QtGlobal>
-#include "logglobal.h"
 #include "logger.h"
 #include "filelogger.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -25,7 +25,7 @@ namespace stefanfrings {
   @see FileLogger for a description of the two underlying loggers.
 */
 
-class DECLSPEC DualFileLogger : public Logger {
+class QTWEBAPP_EXPORT_DECL DualFileLogger : public Logger {
     Q_OBJECT
 public:
 

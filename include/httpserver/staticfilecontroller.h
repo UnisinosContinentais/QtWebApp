@@ -8,10 +8,10 @@
 
 #include <QCache>
 #include <QMutex>
-#include "httpglobal.h"
 #include "httprequest.h"
 #include "httpresponse.h"
 #include "httprequesthandler.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -42,7 +42,7 @@ namespace stefanfrings {
   received a related HTTP request.
 */
 
-class DECLSPEC StaticFileController : public HttpRequestHandler  {
+class QTWEBAPP_EXPORT_DECL StaticFileController : public HttpRequestHandler  {
     Q_OBJECT
 public:
 

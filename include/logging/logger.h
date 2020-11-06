@@ -12,8 +12,8 @@
 #include <QStringList>
 #include <QMutex>
 #include <QObject>
-#include "logglobal.h"
 #include "logmessage.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -50,7 +50,7 @@ namespace stefanfrings {
   because logging to the console is less useful.
 */
 
-class DECLSPEC Logger : public QObject {
+class QTWEBAPP_EXPORT_DECL Logger : public QObject {
     Q_OBJECT
 public:
 

@@ -2,8 +2,8 @@
 #define STEFANFRINGS_TEMPLATECACHE_H
 
 #include <QCache>
-#include "templateglobal.h"
 #include "templateloader.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -41,7 +41,7 @@ namespace stefanfrings {
   @see TemplateLoader
 */
 
-class DECLSPEC TemplateCache : public TemplateLoader {
+class QTWEBAPP_EXPORT_DECL TemplateCache : public TemplateLoader {
     Q_OBJECT
 public:
 

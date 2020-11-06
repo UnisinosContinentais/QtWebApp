@@ -11,8 +11,8 @@
 #include <QFile>
 #include <QMutex>
 #include <QBasicTimer>
-#include "logglobal.h"
 #include "logger.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -53,7 +53,7 @@ namespace stefanfrings {
   @see Logger for a descrition of the buffer.
 */
 
-class DECLSPEC FileLogger : public Logger {
+class QTWEBAPP_EXPORT_DECL FileLogger : public Logger {
     Q_OBJECT
 public:
 

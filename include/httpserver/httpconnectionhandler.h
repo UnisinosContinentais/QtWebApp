@@ -13,9 +13,9 @@
 #include <QSettings>
 #include <QTimer>
 #include <QThread>
-#include "httpglobal.h"
 #include "httprequest.h"
 #include "httprequesthandler.h"
+#include "export.h"
 
 namespace stefanfrings {
 
@@ -46,7 +46,7 @@ namespace stefanfrings {
   The readTimeout value defines the maximum time to wait for a complete HTTP request.
   @see HttpRequest for description of config settings maxRequestSize and maxMultiPartSize.
 */
-class DECLSPEC HttpConnectionHandler : public QObject {
+class QTWEBAPP_EXPORT_DECL HttpConnectionHandler : public QObject {
     Q_OBJECT
 public:
 
