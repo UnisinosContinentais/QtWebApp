@@ -40,6 +40,8 @@ namespace stefanfrings {
 */
 class QTWEBAPP_EXPORT_DECL HttpConnectionHandler : public QObject {
     Q_OBJECT
+    Q_DISABLE_COPY(HttpConnectionHandler)
+
 public:
 
     /**

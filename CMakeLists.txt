@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(QtWebApp VERSION 1.0.0 LANGUAGES CXX)
 
-add_definitions(-DQT_NO_KEYWORDS)
 add_definitions(-DMAKE_QTWEBAPP_LIB)
 
 # Find includes in corresponding build directories

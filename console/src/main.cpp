@@ -27,7 +27,7 @@ QString searchConfigFile()
     searchList.append(QDir::rootPath()+"etc/opt");
     searchList.append(QDir::rootPath()+"etc");
 
-    Q_FOREACH (QString dir, searchList)
+    foreach (QString dir, searchList)
     {
         QFile file(dir+"/"+fileName);
         if (file.exists())
@@ -40,13 +40,11 @@ QString searchConfigFile()
     }
 
     // not found
-    Q_FOREACH (QString dir, searchList)
+    foreach (QString dir, searchList)
     {
         qWarning("%s/%s not found",qPrintable(dir),qPrintable(fileName));
     }
     qFatal("Cannot find config file %s",qPrintable(fileName));
-
-    return "";
 }
 
 

@@ -44,6 +44,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL StaticFileController : public HttpRequestHandler  {
     Q_OBJECT
+    Q_DISABLE_COPY(StaticFileController)
 public:
 
     /**

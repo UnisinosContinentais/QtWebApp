@@ -55,6 +55,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL FileLogger : public Logger {
     Q_OBJECT
+    Q_DISABLE_COPY(FileLogger)
 public:
 
     /**

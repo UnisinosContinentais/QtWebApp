@@ -43,6 +43,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL TemplateCache : public TemplateLoader {
     Q_OBJECT
+    Q_DISABLE_COPY(TemplateCache)
 public:
 
     /**

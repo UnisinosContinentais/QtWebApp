@@ -36,7 +36,9 @@ namespace stefanfrings {
 */
 
 class QTWEBAPP_EXPORT_DECL HttpRequest {
+    Q_DISABLE_COPY(HttpRequest)
     friend class HttpSessionStore;
+
 public:
 
     /** Values for getStatus() */

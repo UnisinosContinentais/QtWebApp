@@ -35,6 +35,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL LogMessage
 {
+    Q_DISABLE_COPY(LogMessage)
 public:
 
     /**

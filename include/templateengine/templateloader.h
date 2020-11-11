@@ -39,6 +39,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL TemplateLoader : public QObject {
     Q_OBJECT
+    Q_DISABLE_COPY(TemplateLoader)
 public:
 
     /**

@@ -43,7 +43,9 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL HttpListener : public QTcpServer {
     Q_OBJECT
+    Q_DISABLE_COPY(HttpListener)
 public:
+
     /**
       Constructor.
       Creates a connection pool and starts listening on the configured host and port.

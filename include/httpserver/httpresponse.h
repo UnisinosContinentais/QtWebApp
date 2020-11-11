@@ -34,6 +34,7 @@ namespace stefanfrings {
 */
 
 class QTWEBAPP_EXPORT_DECL HttpResponse {
+    Q_DISABLE_COPY(HttpResponse)
 public:
 
     /**

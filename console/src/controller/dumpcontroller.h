@@ -16,6 +16,7 @@
 
 class DumpController : public stefanfrings::HttpRequestHandler {
     Q_OBJECT
+    Q_DISABLE_COPY(DumpController)
 public:
 
     /** Constructor */

@@ -34,6 +34,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL HttpSessionStore : public QObject {
     Q_OBJECT
+    Q_DISABLE_COPY(HttpSessionStore)
 public:
 
     /**

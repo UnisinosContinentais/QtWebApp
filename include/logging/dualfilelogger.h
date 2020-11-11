@@ -27,6 +27,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL DualFileLogger : public Logger {
     Q_OBJECT
+    Q_DISABLE_COPY(DualFileLogger)
 public:
 
     /**

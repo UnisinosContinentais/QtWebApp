@@ -26,6 +26,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL HttpRequestHandler : public QObject {
     Q_OBJECT
+    Q_DISABLE_COPY(HttpRequestHandler)
 public:
 
     /**

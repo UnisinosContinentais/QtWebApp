@@ -12,6 +12,7 @@ namespace stefanfrings {
 
 class QTWEBAPP_EXPORT_DECL HttpConnectionHandlerPool : public QObject {
     Q_OBJECT
+    Q_DISABLE_COPY(HttpConnectionHandlerPool)
 public:
     HttpConnectionHandlerPool(const QSettings* settings, HttpRequestHandler *requestHandler);
 
