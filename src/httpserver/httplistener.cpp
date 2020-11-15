@@ -19,7 +19,7 @@ HttpListener::HttpListener(const QSettings* settings, HttpRequestHandler* reques
     this->settings=settings;
     this->requestHandler=requestHandler;
     // Reqister type of socketDescriptor for signal/slot handling
-    qRegisterMetaType<qintptr>("tSocketDescriptor");
+    qRegisterMetaType<tSocketDescriptor>("tSocketDescriptor");
     // Start listening
     listen();
 }
@@ -60,7 +60,7 @@ void HttpListener::close() {
     }
 }
 
-void HttpListener::incomingConnection(qintptr socketDescriptor) {
+void HttpListener::incomingConnection(tSocketDescriptor socketDescriptor) {
 #ifdef SUPERVERBOSE
     qDebug("HttpListener: New connection");
 #endif
@@ -75,7 +75,7 @@ void HttpListener::incomingConnection(qintptr socketDescriptor) {
     if (freeHandler)
     {
         // The descriptor is passed via event queue because the handler lives in another thread
-        QMetaObject::invokeMethod(freeHandler, "handleConnection", Qt::QueuedConnection, Q_ARG(qintptr, socketDescriptor));
+        QMetaObject::invokeMethod(freeHandler, "handleConnection", Qt::QueuedConnection, Q_ARG(tSocketDescriptor, socketDescriptor));
     }
     else
     {

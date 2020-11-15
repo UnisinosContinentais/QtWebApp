@@ -18,6 +18,14 @@
 #include "export.h"
 
 namespace stefanfrings {
+
+/** Alias type definition, for compatibility to different Qt versions */
+#if QT_VERSION >= 0x050000
+    typedef qintptr tSocketDescriptor;
+#else
+    typedef int tSocketDescriptor;
+#endif
+
 /** Alias for QSslConfiguration if OpenSSL is not supported */
 #ifdef QT_NO_SSL
   #define QSslConfiguration QObject
@@ -97,7 +105,7 @@ public Q_SLOTS:
       Received from from the listener, when the handler shall start processing a new connection.
       @param socketDescriptor references the accepted connection.
     */
-    void handleConnection(const qintptr socketDescriptor);
+    void handleConnection(const tSocketDescriptor socketDescriptor);
 
 private Q_SLOTS:
 

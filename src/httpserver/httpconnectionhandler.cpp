@@ -77,7 +77,7 @@ void HttpConnectionHandler::createSocket()
 }
 
 
-void HttpConnectionHandler::handleConnection(qintptr socketDescriptor)
+void HttpConnectionHandler::handleConnection(tSocketDescriptor socketDescriptor)
 {
     qDebug("HttpConnectionHandler (%p): handle new connection", static_cast<void*>(this));
     busy = true;
