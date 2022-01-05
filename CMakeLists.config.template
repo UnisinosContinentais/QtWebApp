@@ -1,6 +1,7 @@
-# Configura diretório de instalação (CMAKE_INSTALL_PREFIX).
 IF(CMAKE_BUILD_TYPE MATCHES Debug)
-    set(CMAKE_INSTALL_PREFIX [ROOT_DIR]/externalsUnisinos/win64-msvc2015/QtWebApp/install/debug)
+    # Local de instalação da biblioteca de Debug
+    set(CMAKE_INSTALL_PREFIX [ROOT_DIR]/externalsUnisinos/win64-msvc2019/QtWebApp/install/debug)
 else()
-    set(CMAKE_INSTALL_PREFIX [ROOT_DIR]/externalsUnisinos/win64-msvc2015/QtWebApp/install/release)
+    # Local de instalação da biblioteca de Release
+    set(CMAKE_INSTALL_PREFIX [ROOT_DIR]/externalsUnisinos/win64-msvc2019/QtWebApp/install/release)
 endif()
